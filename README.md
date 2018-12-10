@@ -58,3 +58,6 @@ implementation 'com.github.Mrxxy:RatioImageView:1.0.0'
 RatioImageView ratioImageView = findViewById(R.id.ratio_image);
 ratioImageView.setRatio(16 / 9.0f);
 ```
+
+## Preview/预览:
+![preview_1](https://github.com/Mrxxy/RatioImageView/blob/master/art/screenshot_01.png)
