@@ -19,7 +19,7 @@ allprojects {
 ```
 ### Step2
 ```
-implementation 'com.github.Mrxxy:RatioImageView:1.0.0'
+implementation 'com.github.Mrxxy:RatioImageView:1.0.2'
 ```
 
 ## Usage
@@ -57,6 +57,8 @@ implementation 'com.github.Mrxxy:RatioImageView:1.0.0'
 ```java
 RatioImageView ratioImageView = findViewById(R.id.ratio_image);
 ratioImageView.setRatio(16 / 9.0f);
+// or
+ratioImageView.setRatio(16, 9);
 ```
 
 ## Preview/预览:

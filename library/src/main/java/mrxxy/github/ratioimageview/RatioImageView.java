@@ -2,6 +2,7 @@ package mrxxy.github.ratioimageview;
 
 import android.content.Context;
 import android.content.res.TypedArray;
+import android.support.annotation.FloatRange;
 import android.support.annotation.Nullable;
 import android.util.AttributeSet;
 
@@ -40,6 +41,12 @@ public class RatioImageView extends android.support.v7.widget.AppCompatImageView
      */
     public void setRatio(float ratio) {
         this.ratio = ratio;
+        invalidate();
+    }
+
+    public void setRatio(float widthRatio, @FloatRange(from = 0.1) float heightRatio) {
+        setRatio(widthRatio / heightRatio);
+        invalidate();
     }
 
     @Override

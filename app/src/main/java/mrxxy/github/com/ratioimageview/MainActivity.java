@@ -14,7 +14,10 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         RatioImageView ratioImageView = findViewById(R.id.ratio_image);
-        ratioImageView.setRatio(16 / 9.0f);
+//        ratioImageView.setRatio(16 / 9.0f);
+        ratioImageView.setRatio(16, 9);
     }
+
+
 
 }
